@@ -33,6 +33,9 @@ public class MainActivity extends AppCompatActivity {
         showQuoteButton = (Button) findViewById(R.id.showQuoteButton);
         constraintLayout = (ConstraintLayout) findViewById(R.id.constraintLayout);
 
+
+        // Toast
+        Toast.makeText(this, "Welcome!", Toast.LENGTH_SHORT).show();
     }
 }
 
