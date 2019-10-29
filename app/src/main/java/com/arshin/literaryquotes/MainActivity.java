@@ -28,6 +28,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        quoteTextView = (TextView) findViewById(R.id.quoteTextView);
+        showQuoteButton = (Button) findViewById(R.id.showQuoteButton);
+        constraintLayout = (ConstraintLayout) findViewById(R.id.constraintLayout);
+
     }
 }
 
