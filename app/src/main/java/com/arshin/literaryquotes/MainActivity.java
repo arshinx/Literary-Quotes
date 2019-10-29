@@ -33,6 +33,18 @@ public class MainActivity extends AppCompatActivity {
         showQuoteButton = (Button) findViewById(R.id.showQuoteButton);
         constraintLayout = (ConstraintLayout) findViewById(R.id.constraintLayout);
 
+        View.OnClickListener listener = new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                quote = quoteBook.getQuote();
+                color = colorBook.getColor();
+                quoteTextView.setText(quote);
+                constraintLayout.setBackgroundColor(color);
+                showQuoteButton.setTextColor(color);
+            }
+        };
+
+        showQuoteButton.setOnClickListener(listener);
 
         // Toast
         Toast.makeText(this, "Welcome!", Toast.LENGTH_SHORT).show();
