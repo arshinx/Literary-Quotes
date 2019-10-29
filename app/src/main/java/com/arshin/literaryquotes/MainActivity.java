@@ -1,10 +1,29 @@
 package com.arshin.literaryquotes;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.ConstraintLayout;
+
+import android.graphics.Color;
 import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
+import android.widget.Button;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import java.util.Random;
 
 public class MainActivity extends AppCompatActivity {
 
+    // Properties
+    public static final String TAG = MainActivity.class.getSimpleName();
+    private TextView quoteTextView;
+    private Button showQuoteButton;
+    private ConstraintLayout constraintLayout;
+    String quote = "";
+    int color =  0;
+    private QuoteBook quoteBook = new QuoteBook();
+    private ColorBook colorBook  = new ColorBook();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
