@@ -36,6 +36,9 @@ public class MainActivity extends AppCompatActivity {
 
         // Toast
         Toast.makeText(this, "Welcome!", Toast.LENGTH_SHORT).show();
+
+        // Log
+        Log.d(TAG, "Welcome to the App! Looks like there are no issues so far.");
     }
 }
 
