@@ -23,4 +23,11 @@ public class ColorBook {
             "#b7c0c7"  // light gray
     };
 
+    // Methods
+    public int getColor() {
+        Random randomGenerator  = new Random();
+        int randomNumber = randomGenerator.nextInt(9);
+        int color  = Color.parseColor(colors[randomNumber]);
+        return color;
+    }
 }
