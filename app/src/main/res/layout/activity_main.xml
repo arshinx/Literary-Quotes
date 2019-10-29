@@ -21,4 +21,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <TextView
+        android:id="@+id/quoteTextView"
+        android:layout_width="343dp"
+        android:layout_height="126dp"
+        android:layout_marginTop="200dp"
+        android:text="Ants stretch when they wake up in the morning."
+        android:textColor="#fff"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/showQuoteButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleTextView"
+        app:layout_constraintVertical_bias="0.068" />
 </androidx.constraintlayout.widget.ConstraintLayout>
