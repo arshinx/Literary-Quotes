@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
     int color =  0;
     private QuoteBook quoteBook = new QuoteBook();
     private ColorBook colorBook  = new ColorBook();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
