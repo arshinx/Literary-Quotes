@@ -18,4 +18,10 @@ public class QuoteBook {
             "Mammoths still walked the earth when the Great Pyramid was being built."
     };
 
+    // Methods
+    public String getQuote() {
+        Random randomGenerator  = new Random();
+        int randomNumber = randomGenerator.nextInt(9);
+        return facts[randomNumber];
+    }
 }
